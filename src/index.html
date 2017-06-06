@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flicker App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
+  <script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/c6e77faabe.js"></script>
+</head>
+
+<body>
+
+  <!-- head section with logo -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <header class="header">
+          <a href="index.html"> <img class="header__logo" src="image/logo_3.png"></a>
+        </header>
+      </div>
+    </div>
+
+    <!-- search section  -->
+    <div class="row">
+      <div class="col search">
+        <form class="search__form">
+          <h4>Get <span>inspired!</span> Let us know what are you looking for..
+        <i class="fa fa-keyboard-o" aria-hidden="true"></i></h4>
+          <input type="text" name="tags" id="tags">
+          <input type="button" value="Let's search!" id="submit" />
+        </form>
+      </div>
+    </div>
+
+
+    <!-- big pictures section (shown after click) -->
+    <div class="row">
+      <div class="col">
+        <section class="imagesBig">
+          <div id="overlay"></div>
+          <div id="overlayContent">
+            <p class="close__img"> Pst! <span class="close__img--bold">Click</span> on the picture to <span class="close__img--bold">close</span> it!</p>
+            <img id="imgBig" src="" alt="" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    <!-- main section with images -->
+    <div class="row">
+      <div class="col">
+        <div id="picture_box">
+          <p class="recent__images">
+            Or enjoy the most recent images.</p>
+        </div>
+        <section class="imagesBox">
+          <div class="image">
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- navigation section for pages -->
+    <div class="row">
+      <div class="col">
+        <div class="nav">
+          <span class='nav__prev'></span>
+          <span class="nav__recent"></span> z
+          <span class="nav__total"></span>
+          <span class='nav__next'></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="row">
+      <div class="col">
+        <footer class="footer">
+          <p class="footer__copy">© Anna Burkat 2017</p>
+          <div class="links">
+            <a href="https://github.com/annaburkat"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/anna-burkat/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="mailto:anna.burkat@yahoo.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
